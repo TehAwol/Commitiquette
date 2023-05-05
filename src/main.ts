@@ -1,9 +1,5 @@
 import "./style.css";
-import {
-  setupCounter,
-  setupDoubleCounter,
-  setupTripleCounter,
-} from "./counter.ts";
+import { setupCounter, setupTripleCounter } from "./counter.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -12,10 +8,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <h2>Counter</h2>
     <div class="card">
     <button id="counter" type="button"></button>
-    </div>
-    <h2>Double counter</h2>
-    <div class="card">
-    <button id="double-counter" type="button"></button>
     </div>
     <h2>Triple counter</h2>
     <div class="card">
@@ -28,9 +20,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 `;
 
 setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
-setupDoubleCounter(
-  document.querySelector<HTMLButtonElement>("#double-counter")!
-);
 setupTripleCounter(
   document.querySelector<HTMLButtonElement>("#triple-counter")!
 );
