@@ -14,7 +14,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <button id="triple-counter" type="button"></button>
     </div>
     <p class="read-the-docs">
-      A nonsensical counter project to test Commitizen and Github Wiki.
+      A nonsensical counter project to test Commitizen, automatic release notes and Github Wiki.
     </p>
   </div>
 `;
