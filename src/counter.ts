@@ -18,3 +18,7 @@ export function setupTripleCounter(element: HTMLButtonElement) {
   element.addEventListener("click", () => setCounter(tripleCounter + 3));
   setCounter(0);
 }
+
+export function cool() {
+  console.log(cool);
+}
